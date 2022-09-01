@@ -2,6 +2,7 @@ package boardgame;
 
 public class Position {
 
+    //encapsulando
     private int row;
     private int column;
 
@@ -10,6 +11,7 @@ public class Position {
         this.column = column;
     }
 
+    //por conta do encapsulamento o acesso se da pelo get set.
     public int getRow() {
         return row;
     }
