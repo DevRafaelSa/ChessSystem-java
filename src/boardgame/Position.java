@@ -2,7 +2,6 @@ package boardgame;
 
 public class Position {
 
-    //encapsulando
     private int row;
     private int column;
 
@@ -11,7 +10,6 @@ public class Position {
         this.column = column;
     }
 
-    //por conta do encapsulamento o acesso se da pelo get set.
     public int getRow() {
         return row;
     }
@@ -27,9 +25,14 @@ public class Position {
     public void setColumn(int column) {
         this.column = column;
     }
-    //tbm vou criar um toString para imprimir a posicao na tela;
+
+    public void setValues(int row, int column) {
+        this.row = row;
+        this.column = column;
+    }
+
     @Override
-    public String toString(){
+    public String toString() {
         return row + ", " + column;
     }
 }
